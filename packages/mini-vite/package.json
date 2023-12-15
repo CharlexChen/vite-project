@@ -1,0 +1,42 @@
+{
+  "name": "mini-vite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rimraf dist && pnpm run build-bundle -w",
+    "build": "rimraf dist && run-s build-bundle",
+    "build-bundle": "rollup --config rollup.config.ts --configPlugin typescript"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/connect": "^3.4.38",
+    "@types/debug": "^4.1.12",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.10.4",
+    "@types/resolve": "^1.20.6",
+    "npm-run-all2": "^6.1.1",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "@rollup/plugin-typescript": "^11.1.5",
+    "cac": "^6.7.14",
+    "chokidar": "^3.5.3",
+    "connect": "^3.7.0",
+    "debug": "^4.3.4",
+    "es-module-lexer": "^1.1.0",
+    "esbuild": "^0.15.15",
+    "fs-extra": "^10.1.0",
+    "magic-string": "^0.26.7",
+    "picocolors": "^1.0.0",
+    "resolve": "^1.22.1",
+    "rollup": "^4.2.0",
+    "sirv": "^2.0.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2",
+    "ws": "^8.11.0"
+  }
+}

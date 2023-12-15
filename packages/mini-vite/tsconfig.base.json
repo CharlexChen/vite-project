@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    // 指定编译的目标 JavaScript 版本
+    "target": "ES2022",
+    // 指定生成的模块系统
+    "module": "ESNext",
+    // 指定模块解析策略
+    "moduleResolution": "bundler",
+    // 启用所有严格类型检查选项
+    "strict": true,
+    // 生成类型定义文件
+    "declaration": true,
+    // 禁止子类中覆盖父类成员时使用 override 修饰符
+    "noImplicitOverride": true,
+    // 禁止未使用的局部变量
+    "noUnusedLocals": true,
+    // 启用 CommonJS 和 ES Modules 之间的互操作性
+    "esModuleInterop": true,
+    // 在 catch 子句中禁止使用未知类型的变量
+    "useUnknownInCatchVariables": false
+  }
+}

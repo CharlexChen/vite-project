@@ -1,0 +1,17 @@
+{
+  // 指定此配置文件继承自其他配置文件
+  "extends": "./tsconfig.base.json",
+  // 指定需要包含的文件或目录
+  "include": [
+    "./rollup.config.ts"
+  ],
+  // 指定编译选项
+  "compilerOptions": {
+    // 启用 ECMAScript 模块和 CommonJS 模块之间的互操作性
+    "esModuleInterop": true,
+    // 是否生成声明文件（.d.ts）
+    "declaration": false,
+    // 是否解析 JSON 文件中的模块
+    "resolveJsonModule": true,
+  }
+}
